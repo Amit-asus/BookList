@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Books Library</h1>
+      <div class="controls">
+        <input
+          type="text"
+          id="search"
+          placeholder="search by title or author"
+        />
+        <select name="sort" id="sort">
+          <option value="title-asc">Title (A-Z)</option>
+          <option value="title-desc">Title (Z-A)</option>
+          <option value="date-asc">Published Date (oldest)</option>
+          <option value="date-desc">Published Date (Newest)</option>
+        </select>
+        <button id="toggle-view">Switch to Grid</button>
+      </div>
+    </header>
+    <main>
+      <div id="books-container" class="list-view"></div>
+      <div id="loading">Loading More Books</div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
